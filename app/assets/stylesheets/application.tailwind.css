@@ -11,3 +11,18 @@
 }
 
 */
+/* link de submit */
+@layer utilities {
+  .link {
+    @apply text-blue-700 tracking-wide;
+    &:hover {
+      @apply text-blue-900;
+    }
+  }
+}
+
+.kanban-container {
+  position: relative;
+  box-sizing: border-box;
+  width: auto;
+}

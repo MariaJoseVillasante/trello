@@ -24,4 +24,9 @@ Things you may want to cover:
 * ...
 rails new trello -T -d postgresql --css tailwind
 
-bundle exec rails tailwindcss:watch
+rails tailwindcss:watch
+
+rails g devise:install
+rails db:migrate db:test:prepare
+
+rspec spec/models/board_spec.rb
