@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@bundled-es-modules/axios": "^0.27.2",
+    "axios": "^1.2.1"
+  }
+}

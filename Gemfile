@@ -3,16 +3,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
-
-gem "rails", "~> 7.0.4"
-
 gem "bootsnap", require: false
 gem "devise"
 gem "importmap-rails"
-gem "jbuilder"
+gem 'jsonapi-serializer'
 gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
 gem "pundit", "~> 2.2"
+gem "rails", "~> 7.0.4"
 gem "redis", "~> 4.0"
 gem "sassc-rails"# Use Sass to process CSS
 gem "sprockets-rails"
@@ -29,7 +27,8 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   #
   gem "factory_bot_rails"
-  gem "faker"#, git: "https://github.com/faker-ruby/faker.git", branch: "master"
+  #gem "faker"#, git: "https://github.com/faker-ruby/faker.git", branch: "master"
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'main'
   gem "pry-rails"
   gem "rspec-rails", "~> 5.1", ">= 5.1.2"
 end

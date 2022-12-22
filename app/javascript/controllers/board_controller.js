@@ -1,12 +1,19 @@
-import { Controller } from "@hotwired/stimulus"
+import { Controller } from "@hotwired/stimulus";
+import axios from 'axios';
+// import axios from 'redaxios';
 
 export default class extends Controller {
+    // HEADERS = { 'ACCEPT': 'application/json' };
+
     connect() {
+        // axios.get('/api/boards/1/lists', { headers: this.HEADERS }).then((response) => {
+            // console.log('list response:', response);
+        // });
         const boards = [
             {
                 "id"    : "board-id-1",
                 "title" : "Board Title 3",
-                "class": "bg-red-700, text-white",
+                "class": "text-white, bg-red-700",
                 "item"  : [
                     {
                         "id"      : "item-id-1",
@@ -23,7 +30,7 @@ export default class extends Controller {
             {
                 "id"    : "board-id-1",
                 "title" : "Board Title 1",
-                "class": "bg-blue-700, text-white",
+                "class": "text-white, bg-blue-700",
                 "item"  : [
                     {
                         "id"      : "item-id-1",
@@ -40,7 +47,7 @@ export default class extends Controller {
             {
                 "id"    : "board-id-1",
                 "title" : "Board Title 2",
-                "class": "bg-green-700, text-white",
+                "class": "text-white, bg-green-700",
                 "item"  : [
                     {
                         "id"      : "item-id-1",
