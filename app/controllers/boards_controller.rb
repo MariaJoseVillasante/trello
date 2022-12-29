@@ -2,7 +2,7 @@ class BoardsController < ApplicationController
     before_action :authenticate_user!
     def new
         @board = Board.new
-    end
+    end 
     
     def edit
         # @board = Board.find(params[:id])

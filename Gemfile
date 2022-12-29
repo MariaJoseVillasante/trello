@@ -6,10 +6,11 @@ ruby "3.1.2"
 gem "bootsnap", require: false
 gem "devise"
 gem "importmap-rails"
+# gem "jbuilder" #faltaba, se elimina por jsonapi-serializer
 gem 'jsonapi-serializer'
 gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
-gem "pundit", "~> 2.2"
+gem "pundit", "~> 2.2" #autoriza usuarios
 gem "rails", "~> 7.0.4"
 gem "redis", "~> 4.0"
 gem "sassc-rails"# Use Sass to process CSS

@@ -2,6 +2,7 @@ module Api
     class ListsController < ApplicationController
         def index
             @lists = board.lists
+            # @lists = board.all
 
             render json: ListSerializer.new(@lists).serializable_hash.to_json
         end

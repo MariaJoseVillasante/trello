@@ -21,3 +21,4 @@ class BoardPolicy < ApplicationPolicy
     update?
   end
 end
+
